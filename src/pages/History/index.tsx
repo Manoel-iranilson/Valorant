@@ -70,6 +70,7 @@ const History: React.FC = () => {
             <ReactPlayer
               className="react-player"
               width="100%"
+              controls
               url="https://www.youtube.com/watch?v=6TqBXK1fnv0"
             />
           </div>

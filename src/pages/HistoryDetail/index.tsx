@@ -59,6 +59,7 @@ const HistoryDetail: React.FC = () => {
             <ReactPlayer
               className="react-player"
               width="100%"
+              contrcontrolsols
               url="https://youtu.be/JxyAt2d4W4Q"
             />
           </div>
@@ -86,6 +87,7 @@ const HistoryDetail: React.FC = () => {
             <ReactPlayer
               className="react-player"
               width="100%"
+              controls
               url="https://youtu.be/e_E9W2vsRbQ"
             />
           </div>
@@ -117,7 +119,8 @@ const HistoryDetail: React.FC = () => {
             <ReactPlayer
               className="react-player"
               width="100%"
-              url="https://youtu.be/sE3UqyzKR30"
+              controls
+              url="controlshttps://youtu.be/sE3UqyzKR30"
             />
           </div>
         </div>
@@ -152,7 +155,8 @@ const HistoryDetail: React.FC = () => {
             <ReactPlayer
               className="react-player"
               width="100%"
-              url="https://youtu.be/UHFha439Rt8"
+              controls
+              url="controlshttps://youtu.be/UHFha439Rt8"
             />
             <p className="mt-2 fs-5">
               <br />
@@ -184,7 +188,8 @@ const HistoryDetail: React.FC = () => {
               <ReactPlayer
                 className="react-player"
                 width="100%"
-                url="https://youtu.be/XhAOpKRSZ20"
+                controls
+                url="controlshttps://youtu.be/XhAOpKRSZ20"
               />
             </div>
           </div>
@@ -210,7 +215,8 @@ const HistoryDetail: React.FC = () => {
               <ReactPlayer
                 className="react-player"
                 width="100%"
-                url="https://youtu.be/8MwJ2ZABa2I"
+                controls
+                url="controlshttps://youtu.be/8MwJ2ZABa2I"
               />
             </div>
             <p className="mt-2 fs-5">
