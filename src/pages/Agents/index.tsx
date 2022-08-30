@@ -82,20 +82,23 @@ const Agents: React.FC = () => {
         </header>
       </div>
 
-      <div className="container bg-light">
-        <div className=" row" style={{ marginTop: "5rem" }}>
+      <div className="container bg-light ">
+        <div className=" row">
           {agents?.map((agentes) => (
-            <div className="col-lg-4 text-center mt-3">
+            <div
+              className="col-lg-4 text-center "
+              style={{ maxHeight: "30rem" }}
+            >
               <img src={agentes.displayIcon} style={{ maxWidth: "10rem" }} />
               <h2 className="fw-normal">{agentes.displayName}</h2>
               <p>{agentes.description}</p>
               <p>
                 <button
-                  className="button"
+                  className="button "
                   style={{ width: "15rem" }}
                   onClick={() => GoPage(agentes.uuid)}
                 >
-                  <h3>VÊ MAIS</h3>
+                  <h3>VER MAIS</h3>
                 </button>
               </p>
             </div>
