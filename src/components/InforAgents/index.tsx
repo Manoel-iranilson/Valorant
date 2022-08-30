@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Agentes } from "../../pages/Agents";
-
+import { IoArrowBackCircleOutline } from "react-icons/io5";
 import api from "../../services/api";
 
 const InforAgents: React.FC = () => {
   const { id } = useParams();
   const [agent, setAgent] = useState<Agentes>();
   const [descriptionAbility, setDescriptionAbility] = useState("");
+  const navigate = useNavigate();
 
   async function Apiget() {
     const response = await api.get(
@@ -40,7 +41,20 @@ const InforAgents: React.FC = () => {
           className="col-lg-6 col-d-none p-4 d-flex flex-column sm mt-5"
           style={{ marginTop: "10rem" }}
         >
-          <h3 className="text-white">{agent?.displayName}</h3>
+          <div
+            style={{
+              marginTop: "-3rem",
+              marginBottom: "2rem",
+              cursor: "pointer",
+            }}
+          >
+            <IoArrowBackCircleOutline
+              size={40}
+              color="#fff"
+              onClick={() => navigate(`/Agents`)}
+            />
+          </div>
+          <h3 className="text-white ">{agent?.displayName}</h3>
           <p className="card-text  text-white">{agent?.description}</p>
           <div className="row text-white mt-2">
             {agent?.abilities.map((e) => (

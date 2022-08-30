@@ -10,6 +10,7 @@ export interface Agentes {
   description: string;
   fullPortrait: string;
   abilities: abilities[];
+  role: role[];
 }
 
 interface abilities {
@@ -17,6 +18,9 @@ interface abilities {
   description: string;
   displayIcon: string;
   displayName: string;
+}
+interface role {
+  displayIcon: string;
 }
 
 const Agents: React.FC = () => {
@@ -67,7 +71,10 @@ const Agents: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 link-danger text-white">
+              <a
+                href="/History"
+                className="nav-link px-2 link-danger text-white"
+              >
                 Historia
               </a>
             </li>
