@@ -3,6 +3,7 @@ import InforAgents from "../components/InforAgents";
 import InforWeapons from "../components/InforWeapons";
 import Agents from "../pages/Agents";
 import History from "../pages/History";
+import HistoryDetail from "../pages/HistoryDetail";
 import Home from "../pages/Home";
 import Weapons from "../pages/Weapons";
 
@@ -16,6 +17,7 @@ export const Router = () => {
         <Route path="/InforAgents/:id" element={<InforAgents />} />
         <Route path="/InforWeapons/:id" element={<InforWeapons />} />
         <Route path="/History" element={<History />} />
+        <Route path="/HistoryDetail" element={<HistoryDetail />} />
       </Routes>
     </BrowserRouter>
   );

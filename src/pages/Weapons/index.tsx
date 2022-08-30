@@ -56,7 +56,10 @@ const Weapons: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 link-danger text-white">
+              <a
+                href="/History"
+                className="nav-link px-2 link-danger text-white"
+              >
                 Historia
               </a>
             </li>
