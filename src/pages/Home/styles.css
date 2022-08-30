@@ -1,0 +1,56 @@
+.center{
+  margin-top: 15rem;
+} 
+
+#videoBanner {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+      background-size: cover;
+    }
+}
+
+
+.button {
+  border: none;
+  background-color: #B22222;
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.button::before{
+  content: '';
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 0px;
+  height: 82px;
+  background-color: 	#1C1C1C;
+  border-radius: 10px;
+  transition: all 2s ease;
+  opacity: 0.5;
+}
+
+.button:hover::before{
+  width: 100%;
+}
