@@ -1,8 +1,10 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import { useNavigate } from "react-router-dom";
 // import { Container } from './styles';
 
 const HistoryDetail: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div style={{ backgroundColor: "#1C1C1C" }}>
@@ -16,33 +18,32 @@ const HistoryDetail: React.FC = () => {
 
           <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <a
-                href="/agents"
-                className="nav-link px-2 link-danger text-white"
+              <button
+                className=" btn btn-link nav-link px-2 link-danger text-white"
+                onClick={() => navigate("/agents")}
               >
                 Agentes
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="/Weapons"
-                className="nav-link px-2 link-danger text-white"
+              <button
+                className=" btn btn-link nav-link px-2 link-danger text-white"
+                onClick={() => navigate("/Weapons")}
               >
                 Armas
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="/History"
-                className="nav-link px-2 link-danger text-white"
+              <button
+                className=" btn btn-link nav-link px-2 link-danger text-white"
+                onClick={() => navigate("/History")}
               >
                 Historia
-              </a>
+              </button>
             </li>
           </ul>
         </header>
       </div>
-
       <div className="container bg-light">
         <div>
           <h1>Historia</h1>

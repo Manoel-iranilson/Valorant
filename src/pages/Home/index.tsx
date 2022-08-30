@@ -29,28 +29,28 @@ const Home: React.FC = () => {
 
           <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <a
-                href="/agents"
-                className="nav-link px-2 link-danger text-white"
+              <button
+                className=" btn btn-link nav-link px-2 link-danger text-white"
+                onClick={() => navigate("/agents")}
               >
                 Agentes
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="/Weapons"
-                className="nav-link px-2 link-danger text-white"
+              <button
+                className=" btn btn-link nav-link px-2 link-danger text-white"
+                onClick={() => navigate("/Weapons")}
               >
                 Armas
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="/History"
-                className="nav-link px-2 link-danger text-white"
+              <button
+                className=" btn btn-link nav-link px-2 link-danger text-white"
+                onClick={() => navigate("/History")}
               >
                 Historia
-              </a>
+              </button>
             </li>
           </ul>
         </header>
