@@ -59,7 +59,7 @@ const HistoryDetail: React.FC = () => {
             <ReactPlayer
               className="react-player"
               width="100%"
-              contrcontrolsols
+              controls
               url="https://youtu.be/JxyAt2d4W4Q"
             />
           </div>
